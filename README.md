@@ -8,8 +8,17 @@ Computer-aided Invasive Ductal Carcinoma (IDC) grading classification systems ba
 ![unnamed](https://user-images.githubusercontent.com/56868536/162566922-7c10a85e-27a5-43c6-adf8-ab12dd970984.jpg)
 
 # Result
+# Stratified five-fold cross validation results
 <img width="620" alt="image" src="https://user-images.githubusercontent.com/56868536/162567012-a6c7dadf-28fd-4776-a75a-8a5b08324bb2.png">
 
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/56868536/162567127-9842e232-53ad-4e94-bb00-a14309e53fda.png">
+
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/56868536/162567138-421b6d9d-1714-4864-a097-397d2e00234c.png">
+
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/56868536/162567148-74e08620-0925-45dd-9f99-47c9a2a35cbc.png">
+
+# Test results
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/56868536/162567102-4e056aad-050a-49ae-9b4a-af340d08141b.png">
 
 
 # Conclusion 
