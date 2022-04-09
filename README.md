@@ -6,6 +6,7 @@ Computer-aided Invasive Ductal Carcinoma (IDC) grading classification systems ba
 
 # Methodology
 ![unnamed](https://user-images.githubusercontent.com/56868536/162566922-7c10a85e-27a5-43c6-adf8-ab12dd970984.jpg)
+This figure shows the overall flow of our methodology. First, a four-grade dataset (termed the "Four Breast Cancer Grades (FBCG) dataset") will be established using BreaKHis and BCG datasets. The selected 7 pretrained CNN architectures will then be used to model 80% of the FBCG using a 5-fold stratified cross validation approach on the preprocessed data. After confirming the stability of all the models via cross-validation, a final model was trained using all the training data. The final model will be evaluated using a test dataset (the 20% of FBCG). The receiver operating characteristics curves and training versus validation curves will be used to compare and analyse the performance of all the models that were chosen.
 
 # Result
 # Stratified five-fold cross validation results
