@@ -7,7 +7,7 @@ import sklearn.model_selection
 from fastai import *
 from fastai.vision import *
 
-base_path = '/content/drive/FBCG Dataset/Training Set'
+base_path = '/content/FBCG Dataset/Training Set'
 
 # get image file path
 path = Path(base_path)
