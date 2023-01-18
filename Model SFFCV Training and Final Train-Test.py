@@ -1,6 +1,7 @@
-# -*- coding: utf-8 -*-
+
 """   
-This is a sample for model cv training and testing with EfficientNetB0
+This is a sample code for model SFFCV training and retraining-testing with EfficientNetB0
+The same code is applicable for other models
 """
 
 import itertools
@@ -53,14 +54,11 @@ BATCH_SIZE = 16
 EPOCHS = 100
 print('Batch size: ', BATCH_SIZE, 'Epoch: ', EPOCHS)
 
-# mount drive
-drive._mount('/content/drive')
 
 # directory to save
 save_dir = '/content/'
 save_model = f"/content/V2_{model_name}_CrossValidation400x_"
 checkpoint_path = f'/content/v2_cp_{model_name}_400x_CV.h5'
-
 
 
 #Create csv to save results
@@ -236,8 +234,8 @@ def generate_class_weights(class_series, multi_class=True, one_hot_encoded=False
 for idx in range(5):
 	fold_var = 1 + idx
 
-	training_data = pd.read_csv(f'/content/drive/MyDrive/Wingates FYP/CSV2/training_data_400x{fold_var}.csv')
-	validation_data = pd.read_csv(f'/content/drive/MyDrive/Wingates FYP/CSV2/validation_data_400x{fold_var}.csv')
+	training_data = pd.read_csv(f'/content/training_data_400x{fold_var}.csv')
+	validation_data = pd.read_csv(f'/content/validation_data_400x{fold_var}.csv')
 
 
 
@@ -388,8 +386,8 @@ for idx in range(5):
 	
 	
 # Retrain model with whole train set and test model with test set
-train_dir ='/content/drive/MyDrive/Wingates FYP/Dataset/Extra Dataset/Training Set'
-test_dir ='/content/drive/MyDrive/Wingates FYP/Dataset/Extra Dataset/Test Set'
+train_dir ='/content/FBCG Dataset/Training Set'
+test_dir ='/content/FBCG Dataset/Test Set'
 
 train_dir = pathlib.Path(train_dir)
 test_dir = pathlib.Path(test_dir)
@@ -544,7 +542,7 @@ print('Inference time: ',sum(pred_time_list)/10, 'second')
 
 
 df = pd.DataFrame({'Balanced Accuracy': baccuracy, 'Macro Precision': macro_precision, 'Macro Recall': macro_recall, 'Macro F1score': macro_f1score, 'Kappa Score': kappa_score}, index=[0])  
-df.to_csv('/content/drive/MyDrive/Wingates FYP/CSV2/test_result.csv',  mode='a', index=False, header=False)
+df.to_csv('/content/test_result.csv',  mode='a', index=False, header=False)
 
 
 # Compute cv results 
@@ -555,7 +553,7 @@ def calculate(x):
   average = Average(x)
   print('{:.4f}'.format(average),'±','{:.4f}'.format(statistics.stdev(x)))
 
-df = pd.read_csv(f'/content/drive/MyDrive/Wingates FYP/CSV2/{model_name}_result.csv')
+df = pd.read_csv(f'/content/{model_name}_result.csv')
 print(df.to_string()) 
 
 col_acc_list = df['Balanced Accuracy'].tolist()
