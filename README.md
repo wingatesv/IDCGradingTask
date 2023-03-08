@@ -29,3 +29,6 @@ In this paper, we compare the performance of seven CNN architectures in IDC grad
 The origin datasets combined for the current study are available in the Four Breast Cancer Grades (FBCG) Dataset, https://web.inf.ufpr.br/vri/databases/breast-cancerhistopathological-database-breakhis/, and breast carcinoma histological images from the Department of Pathology, https://zenodo.org/record/834910#.WXhxt4jrPcs.
 
 FBCG Dataset downloadable link: https://drive.google.com/file/d/1G94HX6g5CC7IC3_m6TrqWFuwzRMoQQ0g/view?usp=share_link
+
+# Pytorch Implementation
+check this out for Pytorch Implementation: https://github.com/wingatesv/IDC_Grading_PyTorch.git
