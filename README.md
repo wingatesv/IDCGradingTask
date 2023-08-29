@@ -1,5 +1,25 @@
 # Breast Cancer Histopathological Images Grading Classification using Convolutional Neural Network Models: A Comparative Study
 
+## Citation
+If you find our code useful, please consider citing our work using the bibtex:
+```
+@article{
+voon2022performance,
+title={Performance analysis of seven Convolutional Neural Networks (CNNs) with transfer learning for Invasive Ductal Carcinoma (IDC) grading in breast histopathological images},
+author={Voon, Wingates and Hum, Yan Chai and Tee, Yee Kai and Yap, Wun-She and Salim, Maheza Irna Mohamad and Tan, Tian Swee and Mokayed, Hamam and Lai, Khin Wee},
+journal={Scientific Reports},
+volume={12},
+number={1},
+pages={19200},
+year={2022},
+month=11,
+day=10,
+issn={2045-2322},
+url={https://doi.org/10.1038/s41598-022-21848-3},
+doi={10.1038/s41598-022-21848-3},
+ID={Voon2022}
+}
+```
 
 # Abstract
 Computer-aided Invasive Ductal Carcinoma (IDC) grading classification systems based on deep learning have shown that deep learning may be used to achieve reliable accuracy in IDC grade classification using histopathology images. However, there is a dearth of comprehensive performance comparisons of Convolutional Neural Network (CNN) designs on IDC in the literature. As such, we would like to conduct a comparison analysis of the performance of seven selected CNN models: EfficientNetB0, EfficientNetV2B0-21k, ResNetV1-50, ResNetV2-50, MobileNetV1, and MobileNetV2. Our findings indicated that the EfficientNetV2B0-21k outperformed other CNN models, with a balanced accuracy score of 0.9666±0.0185 (5-fold stratified cross-validation) and 0.9524 (test result), as well as a recall score of 0.9666±0.0185 (5-fold stratified cross-validation) and 0.9524 (test result), while requiring only a small number of Floating-Point Operations (FLOPs) (0.72B) and parameters (7.1M). In conclusion, we discovered that practically all selected CNN models perform well in IDC grading applications, with an average balanced accuracy of 0.936±0.0189 on stratified 5-fold cross-validation and 0.9308±0.0211on the test set.
@@ -32,3 +52,5 @@ FBCG Dataset downloadable link: https://drive.google.com/file/d/1G94HX6g5CC7IC3_
 
 # Pytorch Implementation
 check this out for Pytorch Implementation: https://github.com/wingatesv/IDC_Grading_PyTorch.git
+
+
